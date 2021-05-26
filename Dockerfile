@@ -71,4 +71,4 @@ COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 # Nginx on :80
 EXPOSE 80
 WORKDIR /www
-ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
+CMD ["/docker-entrypoint.sh"]
