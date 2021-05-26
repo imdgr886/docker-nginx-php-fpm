@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.13
 
 # Create user
 RUN adduser -D -u 1000 -g 1000 -s /bin/sh www-data && \
