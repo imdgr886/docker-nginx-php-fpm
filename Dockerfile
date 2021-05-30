@@ -11,6 +11,7 @@ RUN apk add --no-cache --update tini
 
 # Install a golang port of supervisord
 COPY --from=ochinchina/supervisord:latest /usr/local/bin/supervisord /usr/bin/supervisord
+COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 # Install nginx & gettext (envsubst)
 # Create cachedir and fix permissions
