@@ -75,7 +75,7 @@ http {
                     '"geoip_country_code": "$geoip_country_code"'
                     '}';
 
-  access_log /dev/stdout docker;
+  access_log off;
 
   include /etc/nginx/mime.types;
 
